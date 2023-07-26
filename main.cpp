@@ -31,7 +31,7 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT msg, WPARAM wparam, LPARAM lparam) {
 	//標準のメッセージ処理を行う
 	return DefWindowProc(hwnd, msg, wparam, lparam);
 }
-
+     
 std::wstring ConvertString(const std::string& str) {
 	if (str.empty()) {
 		return std::wstring();
