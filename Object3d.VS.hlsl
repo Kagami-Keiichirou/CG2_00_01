@@ -9,8 +9,3 @@ VertexShaderOutput main(VertexShaderInput input) {
 	output.position = input.position;
 	return output;
 }
-
-//float4 main( float4 pos : POSITION ) : SV_POSITION
-//{
-//	return pos;
-//}

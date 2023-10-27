@@ -97,7 +97,7 @@ static void ImGui_ImplDX12_SetupRenderState(ImDrawData* draw_data, ID3D12Graphic
 
     // Setup orthographic projection matrix into our constant buffer
     // Our visible imgui space lies from draw_data->DisplayPos (top left) to draw_data->DisplayPos+data_data->DisplaySize (bottom right).
-    VERTEX_CONSTANT_BUFFER_DX12 vertex_constant_buffer;
+    VERTEX_CONSTANT_BUFFER_DX12 vertex_constant_buffer{};
     {
         float L = draw_data->DisplayPos.x;
         float R = draw_data->DisplayPos.x + draw_data->DisplaySize.x;
